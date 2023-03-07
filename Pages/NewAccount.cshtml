@@ -1,0 +1,30 @@
+﻿@page
+@model MyLibraryManagement.Pages.NewAccountModel
+@{
+    ViewData["Title"] = "New Account";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome to My Library Management Site</h1>        
+</div>
+<div id="registerForm" class="roundDiv accountForm">
+    <form method="post">
+        <p id="RegisterFormText" class="display-6">Register</p>
+
+        <label for="fname" class="text-white textLeft">Imię:</label>
+        <input type="text" id="fname" name="fname" class="rounded" required><br><br>
+
+        <label for="lname" class="text-white textLeft">Nazwisko:</label>
+        <input type="text" id="lname" name="lname" class="rounded" required><br><br>
+
+        <label for="email" class="text-white textLeft">Email:</label>
+        <input type="email" id="email" name="email" class="rounded" required><br><br>
+
+        <label for="username" class="text-white textLeft">Username:</label>
+        <input type="text" id="username" name="username" required class="rounded"><br><br>
+
+        <label for="password" class="text-white textLeft">Password:</label>
+        <input type="password" id="password" name="password" required class="rounded"><br><br>
+
+        <input type="submit" value="Create new account" class="rounded">
+    </form>
+</div>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data.SqlClient;
 
 namespace MyLibraryManagement.Pages
 {
@@ -12,9 +13,14 @@ namespace MyLibraryManagement.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        protected void IndexModel_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        public IActionResult OnPost()
+        {
+            return RedirectToPage("/PatronAccount");
         }
     }
 }
