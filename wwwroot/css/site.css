@@ -1,18 +1,50 @@
+/*background color : antiquewhite  #faebd7*/
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: antiquewhite;
+    font-family: Helvetica Neue;
+}
+
+footer {
+    background-color: #d1b692;
+}
+
+
+#loginForm {
+    background-color: #ab916f;
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #loginForm.roundDiv {
+        border: 2px solid black;
+        border-radius: 80px;
+    }
+
+#loginFormText {
+    color: snow;
 }
