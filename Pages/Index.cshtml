@@ -7,7 +7,7 @@
 <div class="text-center">
     <h1 class="display-4">Welcome to My Library Management Site</h1>
 </div>
-<div id="loginForm" class="roundDiv">
+<div id="loginForm" class="roundDiv accountForm">
     <form method="post">
         <p id="loginFormText" class="display-6">Login</p>
         <label for="username" class="text-white">Username:</label>
@@ -18,13 +18,18 @@
 
         <label for="account-type" class="text-white">Account Type:</label>
         <select id="account-type" name="account-type" class="rounded">
-            <option value="reader">Reader</option>
+            <option value="patron">Parton</option>
             <option value="librarian">Librarian</option>
         </select><br><br>
 
-        <input type="submit" value="Log in" class="rounded" @*asp-area="" asp-page="/ReaderAccount"*@>
+        <input type="submit" value="Log in" class="rounded">
+        <input type="button" value="Register" class="rounded" onclick="location.href='/NewAccount';" />
 
     </form>
+
+
+    
+   
 </div>
 <footer>
 </footer>

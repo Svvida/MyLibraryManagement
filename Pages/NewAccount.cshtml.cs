@@ -3,12 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyLibraryManagement.Pages
 {
-    public class ReaderAccountModel : PageModel
+    public class NewAccountModel : PageModel
     {
-        public IActionResult OnPost()
+        public void OnGet()
         {
-            return RedirectToPage("/ReaderAccount");
         }
-
     }
 }

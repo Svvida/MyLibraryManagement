@@ -24,8 +24,7 @@ footer {
     background-color: #d1b692;
 }
 
-
-#loginForm {
+.accountForm {
     background-color: #ab916f;
     text-align: center;
     width: 40%;
@@ -47,4 +46,17 @@ footer {
 
 #loginFormText {
     color: snow;
+}
+
+#registerForm.roundDiv {
+    border: 2px solid black;
+    border-radius: 80px;
+}
+#registerForm{
+    color:snow;
+}
+
+.textLeft{
+    text-align:left;
+    width:80px;
 }
