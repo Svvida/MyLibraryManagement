@@ -12,9 +12,9 @@ namespace MyLibraryManagement.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnPost()
         {
-
+            return RedirectToPage("/ReaderAccount");
         }
     }
 }

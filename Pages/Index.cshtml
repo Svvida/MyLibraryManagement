@@ -8,7 +8,7 @@
     <h1 class="display-4">Welcome to My Library Management Site</h1>
 </div>
 <div id="loginForm" class="roundDiv">
-    <form action="/login" method="post">
+    <form method="post">
         <p id="loginFormText" class="display-6">Login</p>
         <label for="username" class="text-white">Username:</label>
         <input type="text" id="username" name="username" required class="rounded"><br><br>
@@ -21,8 +21,9 @@
             <option value="reader">Reader</option>
             <option value="librarian">Librarian</option>
         </select><br><br>
-        <input type="submit" value="Log in" class="rounded">
-        @*    <img src="~/Photos/loginFormPhoto.jpg" alt="Zdjęcie książek" id="loginFormPhoto" />*@
+
+        <input type="submit" value="Log in" class="rounded" @*asp-area="" asp-page="/ReaderAccount"*@>
+
     </form>
 </div>
 <footer>
